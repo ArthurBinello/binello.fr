@@ -1,10 +1,7 @@
 body{
 	margin: 0px;
 	background-color: #e0e0e0;
-	font-family: "Arial";
-}
-
-a {
+	font-family: Roboto;
 	color: #e0e0e0;
 }
 
@@ -16,6 +13,8 @@ header{
 	text-align: center;
 	border-bottom: 3px solid;
 	border-color: #3277b3;
+	transition: top 2s ease-in-out;
+	display: none;
 }
 
 header ul {
@@ -58,8 +57,25 @@ header li a:hover {
 	padding-left: 4px;
 }
 
-main{
+#titre {
+	background-image: url("images/placeholder.jpg");
+	background-position: center;
+	padding-top: 300px;
+	padding-bottom: 300px;
+	text-align: center;
+	text-shadow: 0px 0px 20px #262626;
+}
 
+#titre h1 {
+	font-size: 100px;
+	padding-bottom: -20px;
+	line-height: 0;
+}
+
+#titre p {
+	font-size: 40px;
+	font-weight: 500;
+	padding: 0;
 }
 
 footer{

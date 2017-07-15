@@ -3,15 +3,30 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
 	<title>Arthur Binello</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 	<link rel="stylesheet" href="style.css">
 	<link rel="shortcut icon" href="images/binelloico.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">	</script>
 </head>
 <body>
+	<script>
+		$(window).scroll(function() {
+			if($(this).scrollTop() > 600 && !$('header').hasClass('open')) {
+		    	$('header').addClass('open');
+		    	$('header').slideDown("swing");
+			}
+			else if($(this).scrollTop() <= 600) {
+		    	$('header').removeClass('open');
+		    	$('header').slideUp("swing");
+			}
+		});
+	</script>
+
 	<header>
 		<ul>
-			<li><a href="#profile">About me</a></li>
-			<li><a href="#experiences">Experiences</a></li>
-			<li><a href="#skills">Skills</a></li>
+			<li><a href="#profile">Profile</a></li>
+			<li><a href="#experiences">Expériences</a></li>
+			<li><a href="#competences">Compétences</a></li>
 			<li><a href="#portfolio">Portfolio</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
@@ -24,11 +39,91 @@
 		</div>
 	</header>
 	<main>
-		<div id="profile">profile</div>
+		<div id="titre">
+			<h1>Arthur Binello</h1>
+			<p>Développeur informatique</p>
+		</div>
+		<div id="profile"></div>
 		<div id="experiences">experiences</div>
-		<div id="skills">skills</div>
+		<div id="competences">compétences</div>
 		<div id="portfolio">portfolio</div>
 		<div id="contact">contact</div>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
+		a<br/>
 	</main>
 	<footer>
 		Footer
