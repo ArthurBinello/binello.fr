@@ -82,6 +82,12 @@ footer{
 	bottom: 0;
 	height: 40px;
 	width: 100%;
-	background-color: #262626;
+	background-color: #252524;
 	color: #e0e0e0;
+}
+
+footer p {
+	text-align: right;
+	padding: 10px;
+	padding-right: 20px;
 }
