@@ -6,29 +6,17 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 	<link rel="stylesheet" href="style.css">
 	<link rel="shortcut icon" href="images/binelloico.png">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-	<script>
-		$(window).scroll(function() {
-			if($(this).scrollTop() > 600 && !$('header').hasClass('down')) {
-		    	$('header').addClass('down');
-		    	$('header').slideDown("swing");
-			}
-			else if($(this).scrollTop() <= 600) {
-		    	$('header').removeClass('down');
-		    	$('header').slideUp("swing");
-			}
-		});
-	</script>
-
 	<header>
 		<ul>
 			<li><a href="#profile">Profile</a></li>
-			<li><a href="#experiences">Expériences</a></li>
-			<li><a href="#competences">Compétences</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li><a href="#experiences_title">Expériences</a></li>
+			<li><a href="#competences_title">Compétences</a></li>
+			<li><a href="#portfolio_title">Portfolio</a></li>
+			<li><a href="#contact_title">Contact</a></li>
 		</ul>
 		
 		<div id="links">
@@ -43,87 +31,15 @@
 			<h1>Arthur Binello</h1>
 			<p>Développeur informatique</p>
 		</div>
-		<div id="profile"></div>
-		<div id="experiences">experiences</div>
-		<div id="competences">compétences</div>
-		<div id="portfolio">portfolio</div>
-		<div id="contact">contact</div>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
+		<div id="profile" class="content"></div>
+		<div id="experiences_title" class="title">experiences</div>
+		<div id="experiences" class="content"></div>
+		<div id="competences_title" class="title">compétences</div>
+		<div id="competences" class="content"></div>
+		<div id="portfolio_title" class="title">portfolio</div>
+		<div id="portfolio" class="content"></div>
+		<div id="contact_title" class="title">contact</div>
+		<div id="contact" class="content"></div>
 	</main>
 	<footer>
 		<p>Copyright © <script>document.write(new Date().getFullYear());</script> Arthur Binello</p>
