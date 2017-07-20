@@ -1,8 +1,16 @@
 body{
 	margin: 0px;
 	background-color: #e0e0e0;
-	font-family: Roboto;
+	font-family: 'Roboto';
 	color: #e0e0e0;
+}
+
+h1 {
+	cursor: default;
+}
+
+p {
+	cursor: default;
 }
 
 header{
@@ -35,14 +43,14 @@ header li {
 
 header li a {
 	display: block;
-    color: white;
+    color: #e0e0e0;
     padding: 15px 20px;
     text-decoration: none;
 }
 
 header li a:hover {
     background-color: #3277b3;
-    color: white;
+    color: #e0e0e0;
 }
 
 #links {
@@ -57,32 +65,84 @@ header li a:hover {
 	padding-left: 4px;
 }
 
-#titre {
+#title {
 	background-image: url("images/placeholder.jpg");
 	background-position: center;
 	padding-top: 300px;
-	padding-bottom: 300px;
+	padding-bottom: 200px;
 	text-align: center;
-	text-shadow: 0px 0px 20px #262626;
+	text-shadow: 0px 0px 20px #252525;
 }
 
-#titre h1 {
+#title h1 {
 	font-size: 100px;
 	padding-bottom: -20px;
 	line-height: 0;
 }
 
-#titre p {
+#subtitle {
 	font-size: 40px;
 	font-weight: 500;
 	padding: 0;
+	padding-bottom: 100px;
+}
+
+#title ul {
+	list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    float: left; display: block; left: 50%; 
+}
+
+#title li {
+	position: relative;
+	float: left;
+	display: block;
+	right: 50%;
+}
+
+#title li a {
+	font-size: 30px;
+	display: block;
+    color: #e0e0e0;
+    padding: 15px 20px;
+    text-decoration: none;
+    -webkit-transition: background-color 250ms linear;
+    -moz-transition: background-color 250ms linear;
+    -o-transition: background-color 250ms linear;
+    -ms-transition: background-color 250ms linear;
+    transition: background-color 250ms linear;
+}
+
+#title li a:hover {
+	background: rgba(37, 37, 37, 0.5);
+}
+
+.title {
+	text-align: center;
+	font-weight: bold;
+	text-shadow: 0px 0px 20px #252525;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.title h1 {
+	font-size: 40px;
+}
+
+.content {
+	background-color: #e0e0e0;
+	z-index: 1;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 footer{
 	bottom: 0;
 	height: 40px;
 	width: 100%;
-	background-color: #252524;
+	background-color: #252525;
 	color: #e0e0e0;
 }
 
