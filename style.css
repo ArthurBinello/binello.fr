@@ -19,6 +19,11 @@ h1 {
 
 p {
 	cursor: default;
+	font-family: "Arial";
+}
+
+a {
+	color: #e0e0e0;
 }
 
 header{
@@ -30,8 +35,6 @@ header{
 	text-align: center;
 	border-bottom: 3px solid;
 	border-color: #3277b3;
-	transition: top 2s ease-in-out;
-	display: none;
 }
 
 header #ico {
@@ -132,11 +135,6 @@ header li a:hover {
     color: #ffffff;
     padding: 15px 20px;
     text-decoration: none;
-    -webkit-transition: background-color 250ms linear;
-    -moz-transition: background-color 250ms linear;
-    -o-transition: background-color 250ms linear;
-    -ms-transition: background-color 250ms linear;
-    transition: background-color 250ms linear;
 }
 
 #title li a:hover {
