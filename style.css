@@ -1,9 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek,vietnamese);
+
 body{
 	margin: 0px;
 	padding-bottom: -11px;
 	background-color: #ffffff;
-	font-family: 'Roboto';
+	font-family: "Roboto";
+	font-weight: 400;
 	color: #ffffff;
+	white-space: nowrap;
 }
 
 h1 {
@@ -20,6 +24,7 @@ a {
 }
 
 header{
+	font-weight: 400;
 	z-index: 999;
 	position: fixed;
 	top: 0;
@@ -39,14 +44,14 @@ header #ico {
 }
 
 header ul {
-    list-style: none;
-    background-color: #448ccb;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    float: left;
-    display: block;
-    left: 50%; 
+	list-style: none;
+	background-color: #448ccb;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	float: left;
+	display: block;
+	left: calc(50% - 40px);
 }
 
 header li {
@@ -58,15 +63,15 @@ header li {
 
 header li a {
 	display: block;
-    color: #ffffff;
-    padding: 15px 20px;
-    text-decoration: none;
-    cursor: pointer;
+	color: #ffffff;
+	padding: 15px 20px;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 header li a:hover {
-    background-color: #3277b3;
-    color: #ffffff;
+	background-color: #3277b3;
+	color: #ffffff;
 }
 
 #links {
@@ -98,6 +103,7 @@ header li a:hover {
 
 #title h1 {
 	font-size: 100px;
+	font-weight: 200;
 	padding-bottom: -20px;
 	line-height: 0;
 }
@@ -111,20 +117,27 @@ header li a:hover {
 
 #title ul {
 	list-style: none;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
+	margin: 0;
+	padding: 0;
+	cursor: default;
 }
 
 #title li {
-	display: inline;
+	display: inline-block;
+	cursor: pointer;
 }
 
 #title li a {
 	font-size: 30px;
-    color: #ffffff;
-    padding: 15px 20px;
-    text-decoration: none;
+	color: #ffffff;
+	padding: 20px 20px;
+	margin: 0;
+	text-decoration: none;
+	-webkit-transition: background-color 250ms linear;
+	-moz-transition: background-color 250ms linear;
+	-o-transition: background-color 250ms linear;
+	-ms-transition: background-color 250ms linear;
+	transition: background-color 250ms linear;
 }
 
 #title li a:hover {
@@ -133,21 +146,26 @@ header li a:hover {
 
 main {
 	margin-bottom: -16px;
+	text-align: center;
 }
 
 .title {
+	display: inline-block;
 	text-align: center;
 	font-weight: bold;
 	text-shadow: 0px 0px 10px #252525;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 80px;
+	padding-bottom: 80px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	width: 80%;
+	transform: translateZ(0px) scale(1.25);
 }
 
 .title h1 {
-	font-size: 40px;
+	font-size: 50px;
+	font-weight: 300;
 }
 
 #experiences_title {
@@ -168,10 +186,9 @@ main {
 
 .content {
 	background-color: #ffffff;
-	z-index: 2;
+	z-index: 50;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	box-shadow: 0px 0px 20px #252525;
 }
 
 footer{
