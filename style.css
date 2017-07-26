@@ -8,6 +8,7 @@ body{
 	font-weight: 400;
 	color: #ffffff;
 	white-space: nowrap;
+	overflow-x: hidden;
 }
 
 h1 {
@@ -185,10 +186,46 @@ main {
 }
 
 .content {
+	text-align: center;
 	background-color: #ffffff;
 	z-index: 50;
 	padding-top: 50px;
 	padding-bottom: 50px;
+}
+
+#contact {
+	padding-bottom: 0;
+}
+
+#contact ul {
+	width: 60%;
+	margin-bottom: 20px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+#contact li {
+	text-align: left;
+	float: left;
+	display: inline;
+	width: 50%;
+	padding-bottom: 20px;
+}
+
+#contact a {
+	font-size: 18px;
+	color: #448ccb;
+	text-decoration: none;
+}
+
+#contact a:hover {
+	opacity: 0.75;
+}
+
+#contact img {
+	height: 48px;
+	padding-right: 16px;
+	vertical-align: middle;
 }
 
 footer{
