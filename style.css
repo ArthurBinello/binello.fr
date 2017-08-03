@@ -191,6 +191,62 @@ main {
 	z-index: 50;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	color: #252525;
+}
+
+#profile {
+	padding-bottom: 80px;
+	width: 850px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#profile #apropos {
+	width: 250px;
+	padding-top: 20px;
+	float: left;
+}
+
+#profile #titledescription {
+	padding-bottom: 15px;
+	font-size: 28px;
+}
+
+#profile #description {
+	color: #252525;
+	display: block;
+	text-align: left;
+	width: 250px;
+}
+
+#profile #pp {
+	width: 276px;
+	height: 276px;
+	display: inline-block;
+    margin:0 auto;
+}
+
+#profile img {
+	height: 256px;
+	border: 10px solid #448ccb;
+	border-radius: 50%;
+}
+
+#profile #details {
+	text-align: left;
+	font-size: 18px;
+	width: 250px;
+	padding-top: 20px;
+	float: right;
+}
+
+#profile .characteristic {
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	color: #448ccb;
+	padding-bottom: 2px;
+	padding-top: 5px;
 }
 
 #contact {
