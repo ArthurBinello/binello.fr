@@ -210,6 +210,7 @@ main {
 #profile #titledescription {
 	padding-bottom: 15px;
 	font-size: 28px;
+	margin: 0;
 }
 
 #profile #description {
@@ -236,7 +237,6 @@ main {
 	text-align: left;
 	font-size: 18px;
 	width: 250px;
-	padding-top: 20px;
 	float: right;
 }
 
@@ -245,8 +245,57 @@ main {
 	font-size: 20px;
 	font-weight: bold;
 	color: #448ccb;
-	padding-bottom: 2px;
-	padding-top: 5px;
+	margin-bottom: 0;
+}
+
+#portfolio ul {
+	width: 70%;
+	margin-bottom: 20px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+#portfolio li {
+	text-align: left;
+	float: left;
+	display: inline;
+	width: 48.5%;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+#portfolio img {
+	height: 350px;
+	border: 10px solid #448ccb;
+	border-radius: 5%;
+}
+
+#portfolio .project_title {
+	color: #448ccb;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+#portfolio .project_description {
+	color: #252525;
+}
+
+.img__description_layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(36, 62, 206, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
 }
 
 #contact {
