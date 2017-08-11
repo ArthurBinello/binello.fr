@@ -224,7 +224,7 @@ main {
 	width: 276px;
 	height: 276px;
 	display: inline-block;
-    margin:0 auto;
+		margin:0 auto;
 }
 
 #profile img {
@@ -253,6 +253,7 @@ main {
 	margin-bottom: 20px;
 	overflow: hidden;
 	display: inline-block;
+	text-align: center;
 }
 
 #portfolio li {
@@ -264,38 +265,72 @@ main {
 	text-align: center;
 }
 
-#portfolio img {
+.image {
 	height: 350px;
 	border: 10px solid #448ccb;
 	border-radius: 5%;
+	position: relative;
+	transition: 1s ease;
 }
 
 #portfolio .project_title {
 	color: #448ccb;
 	font-weight: bold;
 	font-size: 32px;
+	margin-bottom: 10px;
 }
 
 #portfolio .project_description {
 	color: #252525;
+	margin: 0;
 }
 
-.img__description_layer {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(36, 62, 206, 0.6);
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.image {
+	transition: .5s ease;
+}
 
-  /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
+.image_container:hover .image {
+	opacity: 0.25;
+}
+
+.image_container {
+	position: relative;
+	height: 350px;
+}
+
+.description_container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: #252525;
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: .5s ease;
+}
+
+.image_container:hover .description_container {
+	visibility: visible;
+	opacity: 1;
+}
+
+.description {
+	transition: .2s;
+	transform: translateY(1em);
+	font-size: 32px;
+	font-weight: 100;
+}
+
+#portfolio span {
+	display: block;
+}
+
+.image_container:hover .description {
+	transform: translateY(0);
 }
 
 #contact {
